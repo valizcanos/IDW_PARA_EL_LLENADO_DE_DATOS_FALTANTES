@@ -1,0 +1,10 @@
+Package: idwimp
+Type: Package
+Title: Inverse distance weighting - Fill missing values
+Version: 0.1.0
+Author: Victor Augusto Lizcano Sandoval
+Maintainer: The package maintainer <valizcanos@gmail.com>
+Description: Using the "inverse distance weighting" (IDW) interpolation method this package will allow the filling of missing data for precipitation data.
+License: GNU General Public License v3.0
+Encoding: UTF-8
+LazyData: true
