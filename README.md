@@ -13,7 +13,16 @@ $z_{p} = \frac{\sum_{i=1}^{n}   \left( \frac{z_i}{d_{i}^{p}} \right) }{ \sum_{i=
 # EJEMPLO:
 
 ```
-var add2 = function(number) {
-  return number + 2;
-}
+library(idwimp)
+```
+
+```
+datos = idwimp::patiaMissing
+
+```
+
+```
+llenarDatosAusentes = idw(datos,2,2)
+plot(llenarDatosAusentes[[3]], type = "l", col = "blue")
+lines(datos[[3]], col="red")
 ```
