@@ -11,7 +11,10 @@ $z_{p} = \frac{\sum_{i=1}^{n}   \left( \frac{z_i}{d_{i}^{p}} \right) }{ \sum_{i=
 <p>donde, $z_p$ es la celda a interpolar (o el valor faltante), $z_i$ son valores conocidos, $d_i$ es la distancia de los valores conocidos respectos al punto a interpolar, $p$ es la potencia del método de interpolación. </p>
 
 # EJEMPLO:
-
+```
+library(devtools)
+install_github("valizcanos/IDW_PARA_EL_LLENADO_DE_DATOS_FALTANTES")
+```
 ```
 library(idwimp)
 ```
