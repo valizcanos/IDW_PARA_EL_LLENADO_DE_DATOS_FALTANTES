@@ -9,3 +9,11 @@
 $z_{p} = \frac{\sum_{i=1}^{n}   \left( \frac{z_i}{d_{i}^{p}} \right) }{ \sum_{i=1}^{n}   \left( \frac{1}{d_{i}^{p}} \right)} \tag{1}$<br>
 
 <p>donde, $z_p$ es la celda a interpolar (o el valor faltante), $z_i$ son valores conocidos, $d_i$ es la distancia de los valores conocidos respectos al punto a interpolar, $p$ es la potencia del método de interpolación. </p>
+
+# EJEMPLO:
+
+```
+var add2 = function(number) {
+  return number + 2;
+}
+```

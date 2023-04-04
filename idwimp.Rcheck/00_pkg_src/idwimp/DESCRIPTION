@@ -8,6 +8,7 @@ Description: Using the "inverse distance weighting" (IDW) interpolation method t
 License: GLP-2
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    R (>= 2.10)
+Depends: R (>= 2.10)
 RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-04 21:20:31 UTC; valiz
