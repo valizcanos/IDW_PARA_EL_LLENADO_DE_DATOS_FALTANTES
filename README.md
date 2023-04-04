@@ -13,7 +13,8 @@ $z_{p} = \frac{\sum_{i=1}^{n}   \left( \frac{z_i}{d_{i}^{p}} \right) }{ \sum_{i=
 # EJEMPLO:
 ```
 library(devtools)
-install_github("valizcanos/IDW_PARA_EL_LLENADO_DE_DATOS_FALTANTES")
+install.packages("remotes")
+remotes::install_github("valizcanos/IDW_PARA_EL_LLENADO_DE_DATOS_FALTANTES/idwimp")
 ```
 ```
 library(idwimp)
