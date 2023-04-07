@@ -30,19 +30,23 @@ $z_{p} = \frac{\sum_{i=1}^{n}   \left( \frac{z_i}{d_{i}^{p}} \right) }{ \sum_{i=
 <p> <b>Figura 1.</b>Espacialización de los registros de precipitación </p> <br>
 
 <p>Al aplicar la ecuación 1 implementada con la librería idwimp, para potencias (p) de 1, 2 y 3 e iteraciones (k) de 1, 2 y 3, los resultados del valor ausente serán de: </p><br>
+
 ```
 library(idwimp)
-
+```
+```
 x = c(-76.2938, -76.3356, -76.2758, -76.3109 , -76.2954)
 
 y = c(3.2421, 3.2700, 3.2705, 3.2702, 3.3224)
 
 z = c(94.1, 73.8, 99.4, 83.0, NA)
-
+```
+```
 df = data.frame(x,y,z)
 
 df = df[order(df[[1]]),]
-
+```
+```
 idw(df,p = 1, k=1)
 idw(df,p = 2, k=1)
 idw(df,p = 3, k=1)
@@ -52,7 +56,12 @@ idw(df,p = 3, k=2)
 idw(df,p = 1, k=3)
 idw(df,p = 2, k=3)
 idw(df,p = 3, k=3)
+
 ```
+
+```
+```
+
 | x		| y		| z			|
 |-----------|-----------|-----------------|
 |-76.2938   |3.2421     | 94.1      	|
@@ -128,7 +137,9 @@ idw(df,p = 3, k=3)
 <p>Los valores faltantes para el dato ausente oscilan entre 83.5 y 85.2</p><br>
 
 <p>Para instalar la libreria <b>idwimp</b> puede compiar las siguientes líneas de código en su consola de R y de R-Studio. </p><br>
+
 # EJEMPLO:
+
 ```
 library(devtools)
 install.packages("remotes")
