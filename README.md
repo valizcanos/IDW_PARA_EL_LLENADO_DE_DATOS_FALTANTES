@@ -1,4 +1,4 @@
-# IDW_PARA_EL_LLENADO_DE_DATOS_FALTANTES
+# idwimp paquete (R)
 
 <p>La ponderación de distancia inversa (IDW) en un método determinista para la interpolación multivariada de un conjunto de puntos dispersos conocidos. Este método permite la creación de matrices de pesos espaciales en análisis de autocorrelación espacial.</p><br>
 
