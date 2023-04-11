@@ -1,16 +1,34 @@
+#' @name idw
+#' @aliases idw
+#' @title idw function
+#' @description Function to fill missing values using idwimp package
 #' @param data Data Frame with columns: x,y,z. x: longitudes, y: latitudes, and z precipitation values
 #' @param p Power of the function, by default is 1
 #' @param k Number of iterations by default is 1
 #' @return Return a Data Frame
 #' @examples
-#' prec = c(259.6716, 262.9709, 288.2743, 307.5199, 328.9999) #precipitation measured in different weather stations
-#' lon = c(-77.925, -77.875, -77.825, -77.775, -77.725) #Longitudes of weather stations
-#' lat = c(2.474999, 2.474999, 2.474999, 2.474999, 2.474999) #Latitudes of weather stations
-#' precGap = c(259.6716, 262.9709, NA, 307.5199, 328.9999) #Create gap
+#'
+#' #Example 1:
+#' #precipitation measured in different weather stations
+#' prec = c(259.6716, 262.9709, 288.2743, 307.5199, 328.9999)
+#' #Longitudes of weather stations
+#' lon = c(-77.925, -77.875, -77.825, -77.775, -77.725)
+#' #Latitudes of weather stations
+#' lat = c(2.474999, 2.474999, 2.474999, 2.474999, 2.474999)
+#' #Create gap
+#' precGap = c(259.6716, 262.9709, NA, 307.5199, 328.9999)
 #' df = data.frame(lon,lat,precGap)
 #' filled = idw(df,2,2)
 #' plot(filled$precGap, type="l", col="red")
 #' lines(prec, col="blue")
+#'
+#' #Example 2:
+#'
+#' data("patiaMissing")
+#' filledGapValues = idw(data = patiaMissing, p= 2, k=2)
+#' #plot(filledGapValues$filledGapValues, type = "l", col = "blue")
+#' #lines(patiaMissing$Prec, col="red")
+#'
 #' @export
 
 
